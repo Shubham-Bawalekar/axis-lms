@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.employeeheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color:#AE275F;
+    color: white;
+    
+}
+.smallnavbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.smallnavbar .menu{
+    color: white;
+    font-size: larger;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: black;
+}
+.smallnavbar .menu:hover{
+    transform: scale(1.2);
+    
+}
+.employeeheader .logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 40%;
+}
+
+
+.employeeheader ul li{
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+    
+    
+}
+.smallnavbar ul li{
+    list-style: none;
+    margin-left: 50px;
+    display: inline-block;
+    margin-top: 1.5%;
+}
+.smallnavbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.employeeheader a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.employeeheader a:hover,
+.employeeheader a:active{
+    color: yellow;
+}
+.sidepage{
+    background-color: rgb(223, 220, 220);
+    text-align: center;
+
+}
+.sidebar .sidehead{
+    background-color: #AE275F;
+    color: white;
+    width: 100%;
+}
+.sidemenu ul li{
+    list-style: none;
+    padding-top: 5%;
+}
+.sidemenu a{
+    text-decoration: none;
+    color: black;
+    font-size: 105%;
+    margin-left: -20%;
+    
+    
+}
+
+.sidebar{
+    width: 390px;
+    flex-shrink: 0;
+    height: 100%;
+    overflow: auto;
+    
+  }
+  .mysidebar{
+    width: 382px;
+    flex-shrink: 0;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+
+
+
+

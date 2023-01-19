@@ -1,0 +1,91 @@
+[
+    {
+        "title": "My Profile",
+        "icon": "bi-person-fill",
+        "path": "/myprofile"
+        
+    },
+    {
+        "title": "My Document",
+        "icon": "bi-file-earmark-fill",
+        "path": "/mydocuments"
+    },
+    {
+        "title": "My Project",
+        "icon": "bi-cast",
+        "path": "/myprojects"
+    },
+    {
+        "title": "Bank Policy",
+        "icon": "bi-card-text",
+        "childrens": [
+            {
+                "title": "Cyber Security Policy",
+                "icon": "bi-house-fill",
+                "path": "/csp"
+            },
+            {
+                "title": "Business Continuity Planning",
+                "icon": "bi-info-circle-fill",
+                "path": "/bcp"
+            },
+            {
+                "title": "Dress Code",
+                "icon": "bi-phone-fill",
+                "path": "/dc"
+            },
+            {
+                "title": "Code Of Conduct & Ethics",
+                "icon": "bi-question-circle-fill",
+                "path":"/cce"
+            },
+            {
+                "title": "Corporate Governance",
+                "icon": "bi-question-circle-fill",
+                "path":"/cg"
+            },
+            {
+                "title": "Gifting Poliicy",
+                "icon": "bi-question-circle-fill",
+                "path":"/gp"
+            }
+        ]
+    },
+    {
+        "title": "Department",
+        "icon": "bi-buildings",
+        "childrens": [
+            {
+                "title": "Information Technology",
+                "path": "/it"
+            }
+        ]
+    },
+    {
+        "title": "Employee List",
+        "icon": "bi-people-fill",
+        "path": "/bankemployees"
+    },
+    {
+        "title": "Project Details",
+        "icon": "bi-briefcase-fill",
+        "childrens": [
+            {
+                "title": "Current Project",
+                "icon": "bi-house-fill",
+                "path": "/cp"
+            },
+            {
+                "title": "Stakeholders",
+                "icon": "bi-info-circle-fill",
+                "path": "/stake"
+            },
+            {
+                "title": "Job Opportunity",
+                "icon": "bi-phone-fill",
+                "path": "/job"
+            }
+        ]
+    }
+      
+]

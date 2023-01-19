@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color:#AE275F;
+    color: white;
+}
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-right: 40%;
+}
+
+.header ul li{
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+    
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.header a:hover,
+.header a:active{
+    background-color: none;
+}
+
+
+.notification{
+    color: black;
+}

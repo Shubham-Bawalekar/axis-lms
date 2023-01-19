@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backgroundloginpage{
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/4050312/pexels-photo-4050312.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    filter: blur(4px);
+    padding-top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+.loginform{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 50%;
+    height: 60%;
+    padding: 40px;
+    text-align: center;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    font-weight: bold;
+    border: 5px inset #fff;
+    box-shadow: 0 0.188em 1.550em rgb(77, 15, 15);
+    align-items: center;
+    
+}
+.loginform h1{
+    color:white;
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+    position: inherit;
+    text-align: center;
+    display: flex;
+    margin-left: 32%;
+}
+input{
+    border: none;
+    background-color: #fff;
+    height: 2rem;
+    width: 50%;
+    border-radius: 0;
+    text-align: center;
+    padding: 1rem;
+    
+}
+input:focus{
+    outline-color: #AE275F;
+}
+
+.loginform button{
+    color: white;
+    width: 30%;
+    height: 2.5rem;
+    background-color: #AE275F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-left: 35%;
+    border-color: #AE275F;
+    
+}
+.loginform button:hover{
+    transform: scale(1.25);
+}
+.loginform p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -3%;
+}
+.loginform .clickhere{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.loginform .clickhere:hover{
+    color: yellow;
+}

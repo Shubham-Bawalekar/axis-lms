@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color:#AE275F;
+    color: white;
+    margin-top: 10%;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+.footer .social a{
+    color: white;    
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0.65;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: -600%;
+    margin-top: 30%;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+    
+}
+.footer .para{
+    margin-right: -18%;
+}
+.footer .para .privacy{
+    color: white;
+    display: inline-block;
+    margin-left: -60%;
+    margin-top: 10%;
+    
+}
+.footer .para a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    
+}
