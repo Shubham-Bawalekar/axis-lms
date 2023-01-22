@@ -37,7 +37,7 @@ function EmployeeDashboardPage(){
                         you can click on News Explore and you can get 
                         every news of our company in one place.
                     </p>
-                    <Link to="/newsfeed" className={classes.btn}><b>News Explore</b><ArrowRightAltIcon/></Link>
+                    <Link to="/news-feed" className={classes.btn}><b>News Explore</b><ArrowRightAltIcon/></Link>
                      
                 </div>
                 

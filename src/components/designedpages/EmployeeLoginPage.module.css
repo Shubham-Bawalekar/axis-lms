@@ -51,7 +51,7 @@
     display: flex;
     margin-left: 32%;
 }
-input{
+.loginform input{
     border: none;
     background-color: #fff;
     height: 2rem;

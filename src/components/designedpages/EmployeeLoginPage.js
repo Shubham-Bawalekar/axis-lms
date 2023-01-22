@@ -25,6 +25,7 @@ for(let i=0;i<response.data.length;i++){
     console.log("password match");
    
       sessionStorage.setItem("empId",parseInt( response.data[i].empId));
+      sessionStorage.setItem("empName",response.data[i].empName);
       sessionStorage.setItem("email", empEmail);
       sessionStorage.setItem("password", empPassword);
     
