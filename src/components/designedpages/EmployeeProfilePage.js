@@ -25,7 +25,7 @@ function EmployeeProfilePage(){
     useEffect(()=>{
         getDetails();
     }, []);
-    
+   
     return(
         <div>           
         <div className={classes.myprofile}>
@@ -39,7 +39,8 @@ function EmployeeProfilePage(){
                 <p>Department: {employee.empDepartment}</p>
                 <p>Project Name: {employee.empProjectName}</p>
                 <p>Email Id: {employee.empEmail}</p>
-                <p>Address: {employee.empAddress}</p>
+                <p>Address: {employee.empAddress}</p><br/>
+                <a class="btn btn-outline-danger" href="/edit-profile" role="button">Edit Profile</a>
             </div>
         </div>
 </div>

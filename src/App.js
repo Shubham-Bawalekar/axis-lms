@@ -17,6 +17,8 @@ import UploadImgFile from './components/designedpages/UploadImgFile';
 import PdfLoader from './components/designedpages/PdfLoader';
 import ImageLoader from './components/designedpages/ImageLoader';
 import ProjectDetails from './components/designedpages/ProjectDetails';
+import AddProject from './components/designedpages/AddProject';
+import EditProfile from './components/designedpages/EditProfile';
 // import CurrentProjectListPage from './components/designedpages/CurrentProjectListPage';
 // import ShowNews from './components/designedpages/ShowNews';
 
@@ -34,11 +36,13 @@ function App() {
         <Route path="/add-emp" element={<AddEmployee/>}/>
         <Route path="/add-stakeholder" element={<AddStakeholder/>}/>
         <Route path="/stakeholder-list" element={<StakeholderList/>}/>
+        <Route path="/edit-profile" element={<EditProfile/>}/>
         {/* ************NEWS*********** */}
         <Route path="/add-news" element={<AddNews/>}/>
         <Route path="/news-feed" element={<NewsFeed/>}/>
         <Route path="/add-comment" element={<AddComment/>}/>
         {/* **********PROJECT********** */}
+        <Route path="/add-project" element={<AddProject/>}/>
         <Route path="/project-list" element={<ProjectList/>}/>
         <Route path="/project-details" element={<ProjectDetails/>}/>
         <Route path="/upload-image" element={<UploadImgFile/>}/>

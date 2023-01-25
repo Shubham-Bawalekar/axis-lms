@@ -26,6 +26,13 @@ for(let i=0;i<response.data.length;i++){
    
       sessionStorage.setItem("empId",parseInt( response.data[i].empId));
       sessionStorage.setItem("empName",response.data[i].empName);
+      sessionStorage.setItem("empDepartment",response.data[i].empDepartment);
+      sessionStorage.setItem("empProjectName",response.data[i].empProjectName);
+      sessionStorage.setItem("empDesignation",response.data[i].empDesignation);
+      sessionStorage.setItem("supervisorName",response.data[i].supervisorName);
+      sessionStorage.setItem("empDesignation",response.data[i].empDesignation);
+      sessionStorage.setItem("projectId",response.data[i].projectId);
+      sessionStorage.setItem("empPassword",response.data[i].empPassword);
       sessionStorage.setItem("email", empEmail);
       sessionStorage.setItem("password", empPassword);
     

@@ -17,6 +17,7 @@ function AddStakeholder(){
         axios.post("http://localhost:8300/stakeholder", stakeholderData).then((response) => {
           console.log(response);
           alert("stakeholder added");
+          window.location.assign("/stakeholder-list")
         });   
         
     }

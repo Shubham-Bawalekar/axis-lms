@@ -38,7 +38,7 @@ function EmployeeList(){
                                         <h5 class="card-title">{ele.empDesignation}</h5>
                                         <p class="card-text">Address: {ele.empAddress}</p>
                                         <p class="card-text">Project: {ele.empProjectName} | E-mail: {ele.empEmail} | Supervisor: {ele.supervisorName}</p>
-                                        <a href="#" class="btn btn-danger bg-dark text-light">View project </a>
+                                        {/* <a href="#" class="btn btn-danger bg-dark text-light">View project </a> */}
                                     </div>
                             </div><br/></Container>
                         </div>

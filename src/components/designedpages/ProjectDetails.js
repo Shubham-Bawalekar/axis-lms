@@ -7,8 +7,11 @@ function ProjectDetails(){
     let projectId = sessionStorage.getItem('projectId');
     let projectName = sessionStorage.getItem('projectName');
     let projectDescription = sessionStorage.getItem('projectDescription');
+    let projectFlowChart = sessionStorage.getItem('projectFlowChart');
     const [employeeData, setEmployeeData]=useState([]);
+    const [projectData, setProjectData]=useState([]);
     const [stakeholderData, setStakeholderData]=useState([]);
+    const [jobsData, setJobsData]=useState([]);
 
     // **********GETTING EMPLOYEES**********
     useEffect(()=>{
@@ -27,6 +30,8 @@ function ProjectDetails(){
         })
     },[])
 
+
+    
     useEffect(()=>{
         axios.get("http://localhost:8300/stakeholders").then((response)=>{
             console.log("response",response.data);
@@ -38,12 +43,23 @@ function ProjectDetails(){
             
         })
     },[])
+    useEffect(()=>{
+        axios.get("http://localhost:8500/jobs").then((response)=>{
+            console.log("response",response.data);
+            setJobsData(response.data);
+            console.log("job: ",jobsData);
+
+           
+            
+            
+        })
+    },[])
     return(
         <div><WebsiteNavigation></WebsiteNavigation>
 <br/><Container><center><h1>Project Details</h1></center><hr/><br/></Container>
 <Container>
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
                 <h2>Team</h2>
                 {
                     employeeData.map((ele)=>{
@@ -53,7 +69,7 @@ function ProjectDetails(){
                         
                         return(
                             <div>
-                                <Container>  
+                                  
                                 <ul class="list-group">
                                 <li class="list-group-item list-group-item-danger">{ele.empName}</li>
                                 </ul>
@@ -66,7 +82,7 @@ function ProjectDetails(){
                                             <a href="#" class="btn btn-danger bg-dark text-light">View project </a>
                                         </div>
                                 </div> */}
-                                </Container>
+                                
                             </div>
                             
                         )}
@@ -85,12 +101,17 @@ function ProjectDetails(){
   
 <h5 class="card-title">{projectName}</h5>
 
+
+
     <p>{projectDescription}</p>
+    
   </div>
-</div>
+</div><br/><hr/>
+<h5><strong></strong>Flowchart:</h5>
+    <img class="card-img-top" src={projectFlowChart} alt="Card image cap"/> 
             </div>
-            <div class="col-3">
-                <h2>Stakeholders</h2>
+            <div class="col-4">
+                <Container><h2>Stakeholders</h2></Container>
                 {stakeholderData.map((ele) => {
         // console.log("ele:", ele.stakeholderName);
         if (ele.projectId == projectId){
@@ -105,9 +126,34 @@ function ProjectDetails(){
                                 </ul>
               
             </Container>
+           
+            
           </div>
         );}
-      })}
+      })}<br/><br/><br/><br/>
+      <Container>
+        <h2>Jobs</h2>
+        {
+            jobsData.map((ele) => {
+                // console.log(ele.jobName);
+                 if (ele.projectId == projectId){
+                    return(
+                        <div>
+                           
+                            <div class="card border-danger mb-3"> 
+  <div class="card-header">{ele.jobName}</div>
+  <div class="card-body text-dark">
+    
+    <p class="card-text">{ele.jobInfo}</p>
+    <p>Experience: {ele.jobExperience}</p>
+  </div>
+</div>
+                        </div>
+                    )
+                 }
+            })
+        }
+      </Container>
             </div>
         </div></Container>
         </div>

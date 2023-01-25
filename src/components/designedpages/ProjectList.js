@@ -34,6 +34,8 @@ function ProjectList() {
                     sessionStorage.setItem("projectId", ele.projectId);
                     sessionStorage.setItem("projectName", ele.projectName);
                     sessionStorage.setItem("projectDescription", ele.projectDescription);
+                    sessionStorage.setItem("projectFlowChart", ele.projectFlowChart);
+
                 }
 
                 return(

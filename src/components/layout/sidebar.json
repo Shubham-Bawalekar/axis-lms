@@ -64,7 +64,7 @@
     {
         "title": "Employee List",
         "icon": "bi-people-fill",
-        "path": "/bankemployees"
+        "path": "/emp-list"
     },
     {
         "title": "Project Details",
